@@ -149,7 +149,7 @@ If you have plugins that wants to interact with MySQL, modify `tf/addons/sourcem
 Start the server with:
 
 ```PowerShell
-& "D:\TF2Server\srcds.exe" -console -game tf -secured +ip 0.0.0.0 -clientport 27005 -port 27015 +tv_port 27020 -replay +servercfgfile server.cfg +map plr_hightower +mapcyclefile mapcycle.txt
+& "D:\TF2Server\srcds.exe" -console -game tf -secured +ip 0.0.0.0 -clientport 27005 -port 27015 +tv_port 27020 -replay +servercfgfile server.cfg +map cp_sunshine +mapcyclefile mapcycle.txt
 ```
 
 If you want to create a shortcut on your desktop:
@@ -158,7 +158,7 @@ If you want to create a shortcut on your desktop:
 $WshShell = New-Object -comObject WScript.Shell
 $Shortcut = $WshShell.CreateShortcut("$Home\Desktop\TF2Server.lnk")
 $Shortcut.TargetPath = "D:\TF2Server\srcds.exe"
-$shortcut.Arguments = "-console -game tf -secured +ip 0.0.0.0 -clientport 27005 -port 27015 +tv_port 27020 -replay +servercfgfile server.cfg +map plr_hightower +mapcyclefile mapcycle.txt"
+$shortcut.Arguments = "-console -game tf -secured +ip 0.0.0.0 -clientport 27005 -port 27015 +tv_port 27020 -replay +servercfgfile server.cfg +map cp_sunshine +mapcyclefile mapcycle.txt"
 $Shortcut.WorkingDirectory = "D:\TF2Server\"
 $Shortcut.Save()
 ```
@@ -169,7 +169,7 @@ $Shortcut.Save()
 Start the server with:
 
 ```Bash
-/home/steam/tf2server/srcds_run -console -game tf -secured +ip 0.0.0.0 -clientport 27005 -port 27015 +tv_port 27020 -replay +servercfgfile server.cfg +map plr_hightower +mapcyclefile mapcycle.txt
+/home/steam/tf2server/srcds_run -console -game tf -secured +ip 0.0.0.0 -clientport 27005 -port 27015 +tv_port 27020 -replay +servercfgfile server.cfg +map cp_sunshine +mapcyclefile mapcycle.txt
 ```
 
 If you want to create a shortcut with screen you can execute later with `./tf2server.sh`:
@@ -178,5 +178,5 @@ If you want to create a shortcut with screen you can execute later with `./tf2se
 
 ```
 #!/bin/bash
-screen -m -S tf2server /home/steam/tf2server/srcds_run -console -game tf -secured +ip 0.0.0.0 -clientport 27005 -port 27015 +tv_port 27020 -replay +servercfgfile server.cfg +map plr_hightower +mapcyclefile mapcycle.txt
+screen -m -S tf2server /home/steam/tf2server/srcds_run -console -game tf -secured +ip 0.0.0.0 -clientport 27005 -port 27015 +tv_port 27020 -replay +servercfgfile server.cfg +map cp_sunshine +mapcyclefile mapcycle.txt
 ```
