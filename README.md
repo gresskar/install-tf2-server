@@ -1,4 +1,4 @@
-# tf2-server
+# TF2 Server
 Dedicated Team Fortress 2 server w/ MetaMod:Source, SourceMod and custom SourceMod plugins
 
 *All Windows commands are done through PowerShell; do not use admin!*
