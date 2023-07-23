@@ -1,0 +1,16 @@
+Welcome to my Team Fortress 2 server!
+
+The map rotation is:
+
+- Badlands (5CP)
+- Granary (5CP)
+- Gullywash (5CP)
+- Metalworks (5CP)
+- Process (5CP)
+- Snakewater (5CP)
+- Sultry (5CP)
+- Sunshine (5CP)
+- Villa (5CP)
+- Bagel (KOTH)
+- ClearCut (KOTH)
+- Product (KOTH)
