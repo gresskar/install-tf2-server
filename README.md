@@ -66,7 +66,7 @@ Create and modify `D:\TF2Server\tf\cfg\mapcycle.txt` on Windows or `/home/steam/
 
 [SourceMod](https://www.sourcemod.net/downloads.php?branch=stable)
 
-Download, unzip and extract these to the `tf/` folder - the final directory structure should look like this:
+Download, unzip and extract these to the `tf/` folder - the final directory structure should look something like this:
 
 ```Bash
 /home/steam/tf2server/
@@ -77,7 +77,7 @@ Download, unzip and extract these to the `tf/` folder - the final directory stru
     │   ├── metamod.vdf
     │   ├── metamod_x64.vdf
     ├── cfg
-    │   ├── metamod
+    │   ├── sourcemod
     │   │   ├── sm_warmode_off.cfg
     │   │   ├── sm_warmode_on.cfg
     │   │   ├── sourcemod.cfg
@@ -87,7 +87,7 @@ Download, unzip and extract these to the `tf/` folder - the final directory stru
 Make yourself an in-game administrator for `/admin` access by modifying `tf/addons/sourcemod/configs/admins.cfg`:
 
 ```
-Admins {
+...
     "gresskar"
     {
         "auth"        "steam"
@@ -95,7 +95,7 @@ Admins {
         "flags"       "z"
         "immunity"    "99"
     }
-}
+...
 ```
 
 If you want to add in-game moderators as well, modify `tf/addons/sourcemod/configs/admins.cfg`:
@@ -115,7 +115,7 @@ If you want to add in-game moderators as well, modify `tf/addons/sourcemod/confi
 To make normal players be able to vote, modify `tf/addons/sourcemod/configs/admin_groups.cfg` and make sure the "Default" group has the "k" flag:
 
 ```
-Groups {
+...
     "Default"
     {
         "flags"       "k"
@@ -127,8 +127,7 @@ Groups {
 If you have plugins that wants to interact with MySQL, modify `tf/addons/sourcemod/configs/databases.cfg` and make sure these settings are present:
 
 ```
-"Databases"
-{
+...
     "driver_default"    "mysql"
 
     "default"
@@ -140,7 +139,7 @@ If you have plugins that wants to interact with MySQL, modify `tf/addons/sourcem
         "pass"        "SQL_PASSWORD"
         "port"        "3306"
     }
-}
+...
 ```
 
 ## 6) Run server
